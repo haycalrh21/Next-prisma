@@ -13,11 +13,11 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
     <div className="card w-full bg-base-100 shadow-xl" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div className="card-body">
         <div className="card-actions justify-end">
+          <p> {name}</p>
 
         </div>
 
         <br />
-        <p> {name}</p>
       </div>
     </div>
   );
