@@ -94,7 +94,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
             {posts.map((post) => (
               <div className="bg-gray-900 dark:bg-slate-800 p-3 justify-center items-center" key={post.id}>
-                <PostCard post={post} />
+                {post.name}
               </div>
             ))}
           </div>
