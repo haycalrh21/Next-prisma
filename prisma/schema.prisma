@@ -3,10 +3,11 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url = env("coklogi_PRISMA_URL") // uses connection pooling
-  directUrl = env("coklogi_URL_NON_POOLING") // uses a direct connection
+  provider  = "postgresql"
+  url       = env("coklogi_PRISMA_URL")
+  directUrl = env("coklogi_URL_NON_POOLING")
 }
+
 model Post {
   id        String   @id @default(cuid())
   name      String   @db.VarChar(100)
